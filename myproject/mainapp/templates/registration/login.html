@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %} Login {% endblock %}
+
+{%  block content %}
+<h1>Login</h1>
+{% if form.errors %}
+<p>
+    Please, Check ypur username and password
+</p>
+{% else %}
+<p>
+    Please, use the following form to login.
+</p>
+{% endif %}
+<div class="login-form">
+    <form action="{% url 'login' %}" method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{next}}" />
+        <p>
+            <input type="submit" value="Log-in"/>
+        </p>
+    </form>
+    <p>
+        <a href="{% url 'password-reset' %}">Forgotten Your Password</a>
+    </p>
+    <p>
+        <a href="{% url 'register' %}">Dont have an account</a>
+    </p>
+</div>
+{% endblock %}
+ 

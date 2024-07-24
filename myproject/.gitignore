@@ -1,0 +1,46 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.swp
+*.swo
+*.bak
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+db.sqlite3
+*.sqlite3
+
+# If you're using Django migrations
+migrations/
+
+# Environment variables
+.env
+
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# If you're using Jupyter notebooks
+.ipynb_checkpoints
+
+# Static files
+staticfiles/
+
+# Media files
+media/
+
+# Node modules
+node_modules/
+npm-debug.log
+
+# JetBrains IDEs
+.idea/

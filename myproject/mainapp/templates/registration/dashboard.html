@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %} DashBoard {% endblock %}
+
+{%  block content %}
+<h1>DashBoard</h1>
+Hello, {{request.user.username}}
+<p>Welcome to WhatBytes</p>
+<!-- <form action="{% url 'logout' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">LogOut</button>
+</form> -->
+<p>You can change your password 
+    <a href="{% url 'password-change' %}">here</a>
+</p>
+<p><a href="{% url 'user-profile' %}">View Profile</a></p>
+<a href="{% url 'logout' %}">LogOut</a>
+{% endblock %}
