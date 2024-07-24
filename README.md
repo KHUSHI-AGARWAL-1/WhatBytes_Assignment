@@ -28,6 +28,20 @@ Welcome to the WhatBytes Project! This Django web application is designed to pro
     pip install -r requirements.txt
 4. **Set up environment variables:**
 
-  ```bash
+     ```bash
     EMAIL_HOST_USER=your_email@gmail.com
     EMAIL_HOST_PASSWORD=your_email_password
+5. **Apply migrations:**
+
+   ```bash
+   python manage.py migrate
+6. **Create a superuser (optional but recommended):**
+
+   ```bash
+   python manage.py createsuperuser
+7. **Run the development server:**
+
+   ```bash
+   python manage.py runserver
+
+*The application will be available at http://127.0.0.1:8000/.*
